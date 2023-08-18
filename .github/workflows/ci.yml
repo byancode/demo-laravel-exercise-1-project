@@ -7,15 +7,6 @@ jobs:
       image: kirschbaumdevelopment/laravel-test-runner:8.1
 
     services:
-      mysql:
-        image: mariadb
-        env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: 1
-          MYSQL_DATABASE: laravel
-          MYSQL_USER: root
-        ports:
-          - 3306:3307
-
       redis:
         image: redis:alpine
         ports:
